@@ -31,6 +31,7 @@ const masterurl =`http://www.espncricinfo.com`;
         )
        
      }
+     console.log(DataArray);
      fs.writeFile(`test/${ele.toUpperCase()} ${t}.json`,JSON.stringify(DataArray), (err) =>{
          if (err) console.log(err)
          console.log('Written Successfully');
